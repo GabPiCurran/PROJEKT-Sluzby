@@ -1,0 +1,211 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    color:#8B8B8B;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+hr {
+    border: 2px solid #407BFF;
+    width: 60px;
+}
+
+.sekce1 img {
+    max-width: 425px;
+    padding: 60px 60px 30px 60px;
+}
+
+
+.sekce2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    display: inline-flex;
+}
+
+
+
+
+.tlacitka {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    margin-bottom: 1em;
+    padding: 11px 18px;
+    border-radius: 20px;
+
+}
+
+.pohoda {
+    background-color: #8B8B8B;
+    border-radius: 20px;
+    padding: 11px 18px;
+}
+
+
+.ikona {
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    padding: 20px 20px;
+}
+
+.CK p,
+.delegati p {
+    padding-left: 32px;
+}
+
+.sekce2-prava,
+.sekce3-leva {
+    padding-bottom: 32px;
+}
+
+@media screen and (min-width: 640px)
+ {
+    .tlacitka {
+        flex-direction: row;
+        
+    }
+
+    .pohoda {
+        margin-left: 20px;
+    }
+
+    .dobrodruzstvi {
+        margin-bottom: 0;
+    }
+
+    
+    .CK,
+    .delegati {
+        display: flex;
+        flex: 0 0 calc(100%/3);
+        justify-content: center;
+    }
+
+   
+    .CK p,
+    .delegati p {
+    padding-left: 0px;
+}
+
+
+   
+    .ikona {
+        flex-direction: column;
+        align-items: center;
+       }
+
+
+ }
+
+@media screen and (min-width: 1100px) {
+
+   .sekce1,
+   .sekce2,
+   .sekce3 {
+    display: flex;
+    flex: 0 0 1040px;
+    justify-content: center;
+   }
+    
+   .sekce1 img {
+    padding: 0;
+   }
+
+
+  .sekce1-leva {
+    width: 490px;
+    padding-top: 113px;
+    text-align: left;
+
+  }
+  
+  .sekce1-prava {
+    width: 490px;
+    order: 1;
+    margin-left: 60px;
+    
+   
+  }
+
+  .sekce2-prava {
+    order: 1;
+    margin-left: 60px;
+  }
+
+  .delegati {
+    margin-left: 60px;
+  }
+
+  .sekce2-prava,
+  .sekce3-leva {
+    width: 430px;
+    text-align: left;
+    padding-top: 40px;
+  }
+
+h1 {
+    margin-bottom: 0;
+}
+
+hr {
+    position: absolute;    
+}
+
+
+.CK,
+.delegati {
+    flex-basis: 550px;
+    justify-content: space-between;
+}
+
+
+
+.ikona {
+   margin: 0;
+   flex-basis:31%;
+   padding: 10px;
+}
+
+.sekce2,
+.sekce3 {
+    height: 191px;
+}
+
+}
